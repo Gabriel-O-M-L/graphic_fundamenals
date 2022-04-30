@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    window.onload = () => {
+        const canvas = document.getElementById('canvas')
+        const ctx = canvas.getContext('2d')
+        ctx.beginPath();
+        ctx.moveTo(0, 0);
+        ctx.lineTo(300, 150);
+        ctx.strokeWidth = 2
+        ctx.strokeStyle = "#000000"
+        ctx.stroke()
+        ctx.closePath();
+
+
+    }
+</script>
+<canvas id="canvas" width="1024" height="768"></canvas>
+</body>
+</html>
